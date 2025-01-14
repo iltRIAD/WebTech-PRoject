@@ -40,9 +40,9 @@
         <h1>Pricing Management</h1>
         <div class="flex items-center" style="margin-left: 1220px;">
             <div style="margin-left: 1rem;">
-                <button id="button" style="color: rgb(1, 10, 10);">Home</button>
-                <button id="button" style="color: rgb(1, 10, 10);">Profile</button>
-                <button id="button" style="color: rgb(1, 10, 10);">Logout</button>
+                    <button id="button" onclick="goToHome()" style="color: rgb(1, 10, 10);">Home</button>
+                    <button id="button" onclick="goToProfile()" style="color: rgb(1, 10, 10);" >Profile</button>
+                    <button id="button" onclick="goToLogout()" style="color: rgb(1, 10, 10);" >Logout</button>
             </div>
         </div>
     </header>
@@ -81,6 +81,18 @@
     </div>
 
     <script>
+        function goToHome() {
+                window.location.href = '../view/home.php';
+                //fetch('../view/home.php') // Replace 'home.php' with the actual PHP file you want to navigate to
+            }
+            function goToProfile() {
+                window.location.href = '../view/homview_users.php';
+                //fetch('../view/home.php') // Replace 'home.php' with the actual PHP file you want to navigate to
+            }
+            function goToLogout() {
+                window.location.href = '../view/logout.php';
+                //fetch('../view/home.php') // Replace 'home.php' with the actual PHP file you want to navigate to
+            }
         // Fetch Existing Pricing Rules
         function fetchPricingRules() {
             fetch('getPricingRules.php')

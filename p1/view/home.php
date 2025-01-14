@@ -1,9 +1,9 @@
 
 <?php
-    session_start();
-    if(!isset($_COOKIE['status'])){
-        header('location: login.html');
-    }
+    // session_start();
+    // if(!isset($_COOKIE['status'])){
+    //     header('location: login.html');
+    // }
 ?>
 <html>
 <head>
@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href='../charging_station/charging_station_management_admin.php' >  Charing Station </a>
+                    <a href='../charging_station/charging_station_management_admin.php' >  Charging Station </a>
                 </td>
             </tr>
             <tr>
